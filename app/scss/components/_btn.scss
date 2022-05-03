@@ -1,0 +1,22 @@
+.btn {
+	min-width: 200px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $accent-color;
+	color: $white;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 16px 15px;
+
+	&:hover {
+		transform: translateY(-2px);
+		background-color: darken($accent-color, 8%);
+		box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+	}
+
+
+	&__form{
+		text-transform: uppercase;
+	}
+}

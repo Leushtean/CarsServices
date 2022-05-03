@@ -1,0 +1,91 @@
+.contacts {
+	background-color: $black;
+	padding: 97px 0;
+
+	&__title {
+		margin-bottom: 35px;
+	}
+
+	&__form {
+		max-width: 435px;
+	}
+}
+
+.form {
+	// max-width: 440px;
+
+	&__row {
+		margin: 0 -20px;
+		display: flex;
+	}
+
+	&__group {
+		padding: 0 20px;
+		flex: 1;
+		margin-bottom: 40px;
+		position: relative;
+	}
+}
+
+.input {
+	width: 100%;
+	font-family: "poppins", sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	color: $white;
+	padding: 10px 0 5px 0;
+	outline: 0;
+	background-color: transparent;
+	border: 0;
+	border-bottom: 1px solid $text-color;
+
+	&:focus+.label {
+		transform: translateY(-15px);
+		font-size: 12px;
+		color: $text-color;
+	}
+
+	&:not(:placeholder-shown)+.label {
+		transform: translateY(-15px);
+		font-size: 12px;
+		color: $text-color;
+	}
+}
+
+.label {
+	color: $white;
+	letter-spacing: 0.15em;
+	position: absolute;
+	top: 12px;
+	left: 20px;
+	pointer-events: none;
+	transition: all .25s;
+}
+
+.textarea {
+	min-height: 130px;
+	width: 100%;
+	font-family: "poppins", sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	color: $white;
+	padding: 10px 0 5px 0;
+	outline: 0;
+	background-color: transparent;
+	border: 0;
+	border-bottom: 1px solid $text-color;
+	resize: vertical;
+	margin-top: 11px;
+
+	&:focus+.label {
+		transform: translateY(-15px);
+		font-size: 12px;
+		color: $text-color;
+	}
+
+	&:not(:placeholder-shown)+.label {
+		transform: translateY(-15px);
+		font-size: 12px;
+		color: $text-color;
+	}
+}

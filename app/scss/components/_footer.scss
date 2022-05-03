@@ -1,0 +1,20 @@
+.footer {
+	padding: 62px 0;
+	color: $black;
+
+	&__social {
+		display: flex;
+		gap: 21px;
+	}
+}
+
+.social {
+
+	&__link {
+		text-decoration: none;
+	}
+
+	&__link img{
+		height: 25px;
+	}
+}

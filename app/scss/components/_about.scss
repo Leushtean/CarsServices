@@ -1,0 +1,54 @@
+.about {
+	background-color: $black;
+	padding: 117px 0 120px;
+
+	&__block {
+		max-width: 505px;
+		color: $white;
+	}
+
+	&__title {
+		line-height: 150%;
+		letter-spacing: 0.15em;
+	}
+
+	&__descr {
+		line-height: 150%;
+		letter-spacing: 0.23em;
+		font-weight: 600;
+		color: $text-color;
+		margin: 42px 0 52px;
+		
+	}
+
+	&__link {
+		font-size: 18px;
+		font-weight: 500;
+		letter-spacing: 0.15em;
+		text-transform: uppercase;
+		position: relative;
+
+		&:hover {
+			color: $accent-color;
+		}
+
+		&:after {
+			position: absolute;
+			width: 100%;
+			background-color: $white;
+			height: 1px;
+			top: 100%;
+			left: 0;
+			content: '';
+			opacity: 1;
+			transition: opacity .25s ease;
+		}
+
+		&:hover:after {
+			opacity: 0;
+		}
+	}
+	&__image{
+		max-height: 342px;
+	}
+}
